@@ -1,5 +1,6 @@
 body {
-  background-color: #A7D7C5;
+  background-color: #2EB086;
+  background-image:url("image/food-bg.png");
 }
 i {
   position: fixed;
@@ -22,8 +23,8 @@ h1 {
 hr {
   border: none;
   border-top-style: dotted;
-  border-color: #E9EFC0;
-  width: 30%;
+  border-color: #FFE162;
+  width: 80%;
   border-width: 0.5rem;
   margin: 30px auto;
   height: 0;
@@ -31,32 +32,58 @@ hr {
 }
 .container-fluid{
   align-items: center;
-  padding:3em 7em 3em;
+  padding:3em 3em 3em;
+}
+.seperatePartA{
+  background-color: #74B49B;
+      border-radius: 25px;
+        margin: 30px 0;
+}
+.seperatePartB{
+    background-color: #A7D7C5;
+        border-radius: 35px;
+        margin: 30px 0;
+}
+.whole {
+  margin:0 4em;
+    border-radius: 25px;
+}
+.contentDiv{
+  background-color: #E9EFC0;
+  background-size: 5px 5px;
+  border-radius: 25px;
+  padding:10px;
+  margin-right: 50px;
+}
+.carouselDiv{
+  background-color: #E9EFC0;
+  background-size: 5px 5px;
+  border-radius: 25px;
+  padding:20px;
+  margin:30px 20px 70px;
+}
+.carousel{
+margin:10px 0 10px;
+
 }
 div.title-container {
   padding:0;
 }
-section.content {
-  /* height: 700px; */
-  background-color: #74B49B;
-}
-div.content-container {
-  padding-top: 120px;
+.content-container {
+  padding-top: 80px;
   padding-bottom: 120px;
-  background-image: -webkit-linear-gradient(45deg, #74B49B 50%, #A7D7C5 50%);
-  border-bottom-style: solid;
+  /* background-image: -webkit-linear-gradient(45deg, #74B49B 50%, #A7D7C5 50%); */
+  border-bottom-style: dashed;
   border-color: #74B49B;
   border-width: thick;
 }
 .content h1 {
-  text-align: left;
-}
-.carousel {
-  margin:2em 0 8em;
+  transform: rotate(2deg);
+  padding: 0.2rem 1.2rem;
+  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+  background-color: #fdcb6e;
+  font-size: 3rem;
 }
 .project-pic {
   height: 20rem;
-}
-#JavaScriptPart {
-  background-color: #74B49B;
 }
