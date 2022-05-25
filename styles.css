@@ -10,26 +10,35 @@ i {
   text-align: center;
   background-color: #E9EFC0;
   opacity: 0.8;
+  z-index: 1;
 }
 a {
   color:black;
+  font-family: 'Permanent Marker','Ma Shan Zheng', cursive;
 }
 a:hover {
   color:#658525;
 }
-.seperatePartA h1 {
-  text-align: center;
-  padding: 0.2rem 1.2rem;
-  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
-  background-color: #fdcb6e;
-  font-size: 3rem;
-}
+
 h1 {
   text-align: center;
   padding: 0.2rem 1.2rem;
   border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
   background-color: #fdcb6e;
   font-size: 3rem;
+font-family: 'Permanent Marker','Ma Shan Zheng', cursive;
+color: rgba(97, 65, 36, 0.9);
+}
+h2{
+    font-size: 2rem;
+  font-family: 'Permanent Marker','华文行楷', cursive;
+}
+h3 {
+    font-family: 'Permanent Marker','华文行楷', cursive;
+}
+p {
+  font-size: 1.2rem;
+  font-family: "华文雅黑", "Times New Roman",serif;
 }
 hr {
   border: none;
@@ -46,7 +55,7 @@ hr {
   padding:3em 3em 3em;
 }
 .seperatePart{
-  background-color: #74B49B;
+  background-color: rgba(116,180,155,0.7);
       border-radius: 1.6rem;
         margin: 1.8rem 0;
 }
@@ -54,7 +63,11 @@ hr {
 .whole {
   margin:0 4em;
     border-radius: 1.6rem;
+    /* border-style: none dashed;
+    border-color: #74B49B;
+    border-width: thick; */
 }
+
 .contentDiv{
   background-color: #E9EFC0;
   border-radius: 1.6rem;
@@ -88,6 +101,7 @@ div.title-container {
 .content h1 {
   transform: rotate(2deg);
 }
+
 .project-pic {
   height: 20rem;
 }
