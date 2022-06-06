@@ -1,281 +1,554 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personal Web Development Summary</title>
+    <link rel="icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nanum+Pen+Script&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c0703eccd6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Personal Web Development Summary</title>
-  <link rel="icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nanum+Pen+Script&family=Permanent+Marker&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Permanent+Marker&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/c0703eccd6.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <a href="#title"> <i class="fa-solid fa-arrow-up"><br> go top</i></a>
-  <!-- Nav Bar -->
-  <div id="title" class="title-container container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-      <a class="navbar-brand" href="#title">
-        Dora's Portfolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navContent">
-      <ul class="navbar-nav ms-auto">
-        <li class="navbar-item"><a class="nav-link" href="#HTML&CSS">HTML&CSS</a></li>
-        <li class="navbar-item"><a class="nav-link" href="#JavaScriptPart">JavaScript</a></li>
-        <li class="navbar-item"><a class="nav-link" href="#React">React</a></li>
-      </ul>
-      </div>
-    </nav>
-  </div>
-
-  <section class="content">
-    <div class="content-container container-fluid">
-      <div class="row">
-
-        <div class="col-lg-5">
-          <div class="contentDiv">
-
-          <h1>目录</h1>
-          <h2>1 CSS&HTML</h2>
-          <a href="#personal">
-            <p>1.1 HTML+CSS构建个人网站主页</p>
-          </a>
-          <a href="#Tindog">
-            <p>1.2 借助Bootstrap制作网页</p>
-          </a>
-          <h2>2 JavaScript</h2>
-          <a href="#Dicee">
-            <p>2.1基础JavaScript代码 - 骰子游戏</p>
-          </a>
-          <a href="#Drum">
-            <p>2.2 进阶DOM - 击鼓页面</p>
-          </a>
-          <a href="#Simon">
-            <p>2.3 jQuery - Simon游戏</p>
-          </a>
-          <a href="#Newsletter">
-            <p>2.4 Node.js + Express + Git – 登记邮箱</p>
-          </a>
-          <a href="#TodoList">
-            <p>2.5 Node.js+EJS+MongoDB+Mongoose - TodoList</p>
-          </a>
-          <h2>3 React</h2>
-          <a href="#Keeper">
-            <p>3.1 React+Node.js+MongoDB – Keeper</p>
-          </a>
-          </div>
-          <!-- <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i>Download</button>
-        <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-google-play"></i>Download</button> -->
+  <body>
+    <a href="#title">
+      <i class="fa-solid fa-arrow-up"
+        ><br />
+        go top</i
+      ></a
+    >
+    <!-- Nav Bar -->
+    <div id="title" class="title-container container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <a class="navbar-brand" href="#title"> Dora's Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navContent"
+          aria-controls="navContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="navbar-item">
+              <a class="nav-link" href="#HTML&CSS">HTML&CSS</a>
+            </li>
+            <li class="navbar-item">
+              <a class="nav-link" href="#JavaScriptPart">JavaScript</a>
+            </li>
+            <li class="navbar-item">
+              <a class="nav-link" href="#React">React</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-lg-7">
-
-          <div class="carouselDiv">
-                        <h1>项目概览</h1>
-          <div id="carouselPic" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselPic" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselPic" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselPic" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselPic" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselPic" data-bs-slide-to="4" aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#carouselPic" data-bs-slide-to="5" aria-label="Slide 6"></button>
-              <button type="button" data-bs-target="#carouselPic" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                            <button type="button" data-bs-target="#carouselPic" data-bs-slide-to="7" aria-label="Slide 8"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <a href="#Dicee"><img src="image\Dice-c.JPG" class="d-block w-100 carouselImg" alt="..."></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#personal"><img src="image\personal-c.jpg" class="d-block w-100 carouselImg" alt="..."></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#Tindog"><img src="image\Tindog-c.jpg" class="d-block w-100 carouselImg" alt="..."></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#Drum"><img src="image\Drum-c.JPG" class="d-block w-100 carouselImg" alt="..."></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#Simon"><img src="image\simon-c.JPG" class="d-block w-100 carouselImg" alt="..."></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#Newsletter"><img src="image\newsletter-c.jpg" class="d-block w-100 carouselImg" alt="..."></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#TodoList"><img src="image\toDoList-c.jpg" class="d-block w-100 carouselImg" alt="..."></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#Keeper"><img src="image\KeeperApp-c.jpg" class="d-block w-100 carouselImg" alt="..."></a>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPic" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselPic" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-        </div>
-      </div>
+      </nav>
     </div>
-  </section>
 
-  <div class="whole">
-    <section id="HTML&CSS" class="container-fluid seperatePart">
-      <h1>HTML&CSS</h1>
-      <div id="personal" class="container-fluid personal-webpage">
+    <section class="content">
+      <div class="content-container container-fluid">
         <div class="row">
-          <div class="col-lg-6">
-            <h3>1.1 HTML+CSS构建个人网站主页</h3>
-            <p>Github在线地址：<a href="https://21cloudocean.github.io/Dora-s-personal-webpage/">Personal-webpage</a></p>
-            <p>总结：<br>在HTML基础上熟悉CSS+DIV构建，盒模型布局，静态页面搭建</p>
+          <div class="col-lg-5">
+            <div class="contentDiv">
+              <h1>目录</h1>
+              <h2>1 CSS&HTML</h2>
+              <a href="#personal">
+                <p>1.1 HTML+CSS构建个人网站主页</p>
+              </a>
+              <a href="#Tindog">
+                <p>1.2 借助Bootstrap制作网页</p>
+              </a>
+              <h2>2 JavaScript</h2>
+              <a href="#Dicee">
+                <p>2.1基础JavaScript代码 - 骰子游戏</p>
+              </a>
+              <a href="#Drum">
+                <p>2.2 进阶DOM - 击鼓页面</p>
+              </a>
+              <a href="#Simon">
+                <p>2.3 jQuery - Simon游戏</p>
+              </a>
+              <a href="#Newsletter">
+                <p>2.4 Node.js + Express + Git – 登记邮箱</p>
+              </a>
+              <a href="#TodoList">
+                <p>2.5 Node.js+EJS+MongoDB+Mongoose - TodoList</p>
+              </a>
+              <a href="#TodoList">
+                <p>2.6 DOM - colorFlipper</p>
+              </a>
+              <h2>3 React</h2>
+              <a href="#Keeper">
+                <p>3.1 React+Node.js+MongoDB – Keeper</p>
+              </a>
+            </div>
+            <!-- <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i>Download</button>
+        <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-google-play"></i>Download</button> -->
           </div>
-          <div class="col-lg-6">
-            <img src="image\personal webpage.jpeg" class="img-fluid project-pic" alt="personal webpage">
-          </div>
-        </div>
-      </div>
-      <hr>
-
-      <div id="Tindog" class="container-fluid Tindog">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>1.2 借助Bootstrap制作网页</h3>
-            <p>Github在线地址：<a href="https://21cloudocean.github.io/TingDog/">TinDog</a></p>
-            <p>总结：<br>
-              1 熟悉并使用Bootstrap的网格系统，页面根据屏幕大小自动调整布局；<br>
-              2 使用Bootstrap各种组件进行页面搭建，包括导航栏、按钮样式、轮播图等。
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <img src="image\Tindog.jpeg" class="img-fluid project-pic" alt="Tindog">
+          <div class="col-lg-7">
+            <div class="carouselDiv">
+              <h1>项目概览</h1>
+              <div
+                id="carouselPic"
+                class="carousel slide"
+                data-bs-ride="carousel"
+                data-bs-interval="3000"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselPic"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselPic"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselPic"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselPic"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselPic"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselPic"
+                    data-bs-slide-to="5"
+                    aria-label="Slide 6"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselPic"
+                    data-bs-slide-to="6"
+                    aria-label="Slide 7"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselPic"
+                    data-bs-slide-to="7"
+                    aria-label="Slide 8"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselPic"
+                    data-bs-slide-to="8"
+                    aria-label="Slide 9"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="#Dicee"
+                      ><img
+                        src="image\Dice-c.JPG"
+                        class="d-block w-100 carouselImg"
+                        alt="..."
+                    /></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#personal"
+                      ><img
+                        src="image\personal-c.jpg"
+                        class="d-block w-100 carouselImg"
+                        alt="..."
+                    /></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#Tindog"
+                      ><img
+                        src="image\Tindog-c.jpg"
+                        class="d-block w-100 carouselImg"
+                        alt="..."
+                    /></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#Drum"
+                      ><img
+                        src="image\Drum-c.JPG"
+                        class="d-block w-100 carouselImg"
+                        alt="..."
+                    /></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#Simon"
+                      ><img
+                        src="image\simon-c.JPG"
+                        class="d-block w-100 carouselImg"
+                        alt="..."
+                    /></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#Newsletter"
+                      ><img
+                        src="image\newsletter-c.jpg"
+                        class="d-block w-100 carouselImg"
+                        alt="..."
+                    /></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#TodoList"
+                      ><img
+                        src="image\toDoList-c.jpg"
+                        class="d-block w-100 carouselImg"
+                        alt="..."
+                    /></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#ColorFlipper"
+                      ><img
+                        src="image\colorFlipper-c.jpg"
+                        class="d-block w-100 carouselImg"
+                        alt="..."
+                    /></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#Keeper"
+                      ><img
+                        src="image\KeeperApp-c.jpg"
+                        class="d-block w-100 carouselImg"
+                        alt="..."
+                    /></a>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselPic"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselPic"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="JavaScriptPart" class="container-fluid seperatePart">
-      <h1>JavaScript</h1>
-      <div id="Dicee" class="container-fluid Dicee">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>2.1 基础JavaScript代码 - 骰子游戏</h3>
-            <p>网页介绍：筛子游戏，刷新会显示不同点数。</p>
-            <p>Github在线地址：<a href="https://21cloudocean.github.io/Dicee-Challenge/">Dicee Challenge</a></p>
-            <p>总结： <br>
-              1 掌握JavaScript基础语法：variable变量，array数列，function函数，使用if条件句、while/for loop；
-              <br>2 掌握DOM。
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <img src="image\dicee challenge.gif" class="img-fluid project-pic" alt="Dicee Challenge">
-          </div>
-        </div>
-      </div>
-      <hr>
-
-      <div id="Drum" class="container-fluid Drum">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>2.2 进阶DOM - 击鼓页面</h3>
-            <p>网页介绍：鼠标点击或按对应按键，不同乐器会发出对应声音。</p>
-            <p>Github在线地址：<a href="https://21cloudocean.github.io/Drum-Kit/">Drum-Kit</a></p>
-            <p>总结：<br>1 综合JavaScript的基础语法及DOM； <br>
-              2 掌握even listener及 switch method。
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <img src="image\drum kit.gif" class="img-fluid project-pic" alt="Drum-Kit">
+    <div class="whole">
+      <section id="HTML&CSS" class="container-fluid seperatePart">
+        <h1>HTML&CSS</h1>
+        <div id="personal" class="container-fluid personal-webpage">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>1.1 HTML+CSS构建个人网站主页</h3>
+              <p>
+                Github在线地址：<a
+                  href="https://21cloudocean.github.io/Dora-s-personal-webpage/"
+                  >Personal-webpage</a
+                >
+              </p>
+              <p>
+                总结：<br />在HTML基础上熟悉CSS+DIV构建，盒模型布局，静态页面搭建
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="image\personal webpage.jpeg"
+                class="img-fluid project-pic"
+                alt="personal webpage"
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <hr>
+        <hr />
 
-      <div id="Simon" class="container-fluid Simon">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>2.3 jQuery - Simon游戏</h3>
-            <p>网页介绍：该游戏每个level会提示一个按键，并将该按键加入用户需要点击的序列，即需要点击的按钮数量与level数相同，用户一旦点击错误，游戏则重新开始。</p>
-            <p>Github在线地址：<a href="https://21cloudocean.github.io/Simon-Game-Challenge/">Simon</a></p>
-            <p>总结：<br>1 熟悉并使用jQuery；<br>
-              2 进一步掌握JavaScript中的function、if逻辑、数列操作。
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <img src="image\Simon.gif" class="img-fluid project-pic" alt="Simon">
+        <div id="Tindog" class="container-fluid Tindog">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>1.2 借助Bootstrap制作网页</h3>
+              <p>
+                Github在线地址：<a
+                  href="https://21cloudocean.github.io/TingDog/"
+                  >TinDog</a
+                >
+              </p>
+              <p>
+                总结：<br />
+                1
+                熟悉并使用Bootstrap的网格系统，页面根据屏幕大小自动调整布局；<br />
+                2
+                使用Bootstrap各种组件进行页面搭建，包括导航栏、按钮样式、轮播图等。
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="image\Tindog.jpeg"
+                class="img-fluid project-pic"
+                alt="Tindog"
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <hr class="noheight">
+      </section>
 
-      <div id="Newsletter" class="container-fluid Newsletter">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>2.4 Node.js + Express + Git – 登记邮箱</h3>
-            <p>网页介绍：用户留下姓名和地址，提交后可自动添加进公司的通讯录，方便统一发送营销邮件。</p>
-            <p>在线地址：<a href="https://desolate-sierra-86985.herokuapp.com/">Newsletter</a></p>
-            <p>总结：<br>1 掌握Node.js及其express框架，制作服务器； <br>
-              2 使用npm、API等。<br>
-              3 利用Git，将本地服务器上传至host网站。<br>
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <img src="image\newsletter.gif" class="img-fluid project-pic" alt="Newsletter">
+      <section id="JavaScriptPart" class="container-fluid seperatePart">
+        <h1>JavaScript</h1>
+        <div id="Dicee" class="container-fluid Dicee">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>2.1 基础JavaScript代码 - 骰子游戏</h3>
+              <p>网页介绍：筛子游戏，刷新会显示不同点数。</p>
+              <p>
+                Github在线地址：<a
+                  href="https://21cloudocean.github.io/Dicee-Challenge/"
+                  >Dicee Challenge</a
+                >
+              </p>
+              <p>
+                总结： <br />
+                1
+                掌握JavaScript基础语法：variable变量，array数列，function函数，使用if条件句、while/for
+                loop；
+                <br />2 掌握DOM。
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="image\dicee challenge.gif"
+                class="img-fluid project-pic"
+                alt="Dicee Challenge"
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <hr class="noheight">
+        <hr />
 
-      <div id="TodoList" class="container-fluid todolist">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>2.5 Node.js+EJS+MongoDB - TodoList</h3>
-            <p>网页介绍：完成清单。可以在URL后输入不同字符串，创建不同的List。</p>
-            <p>在线地址：<a href="https://fathomless-stream-81556.herokuapp.com/">To Do List</a></p>
-            <p>总结：<br>1 使用同一个EJS文件创建多个格式相同的网页；<br>
-              2 创建MongoDB的本地数据库和在线数据库； <br>
-              3 使用Mongoose对MongoDB数据库进行操作，包括对内容进行上传、修改、删除等。
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <img src="image\toDoList.gif" class="img-fluid project-pic" alt="ToDoList">
-          </div>
-        </div>
-      </div>
-      <!-- <hr class="noheight"> -->
-    </section>
-
-    <section id="React" class="container-fluid seperatePart">
-      <h1>React</h1>
-      <div id="Keeper" class="container-fluid Keeper">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>3.1 React+Node.js+MongoDB – Keeper</h3>
-            <p>网页介绍：便签。点击后输入框展开，实时添加和删除便签，便签可以长久保存。</p>
-            <p>具体代码：<a href="https://github.com/21cloudocean/KeeperApp-ReactWithBackend">Keeper App</a></p>
-            <p>总结： <br>
-              1 使用React制作组件，并在不同组件间通过props传输数据和函数；
-              <br>2 使用Hook实现用户与UI的实时互动；
-              <br>3 MERN stack：将React与Node.js+express写成的server及MongoDB连接，实现前后端交互。
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <img src="image\KeeperApp.gif" class="img-fluid project-pic" alt="KeeperApp">
+        <div id="Drum" class="container-fluid Drum">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>2.2 进阶DOM - 击鼓页面</h3>
+              <p>网页介绍：鼠标点击或按对应按键，不同乐器会发出对应声音。</p>
+              <p>
+                Github在线地址：<a
+                  href="https://21cloudocean.github.io/Drum-Kit/"
+                  >Drum-Kit</a
+                >
+              </p>
+              <p>
+                总结：<br />1 综合JavaScript的基础语法及DOM； <br />
+                2 掌握even listener及 switch method。
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="image\drum kit.gif"
+                class="img-fluid project-pic"
+                alt="Drum-Kit"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+        <hr />
 
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
+        <div id="Simon" class="container-fluid Simon">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>2.3 jQuery - Simon游戏</h3>
+              <p>
+                网页介绍：该游戏每个level会提示一个按键，并将该按键加入用户需要点击的序列，即需要点击的按钮数量与level数相同，用户一旦点击错误，游戏则重新开始。
+              </p>
+              <p>
+                Github在线地址：<a
+                  href="https://21cloudocean.github.io/Simon-Game-Challenge/"
+                  >Simon</a
+                >
+              </p>
+              <p>
+                总结：<br />1 熟悉并使用jQuery；<br />
+                2 进一步掌握JavaScript中的function、if逻辑、数列操作。
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="image\Simon.gif"
+                class="img-fluid project-pic"
+                alt="Simon"
+              />
+            </div>
+          </div>
+        </div>
+        <hr class="noheight" />
 
+        <div id="Newsletter" class="container-fluid Newsletter">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>2.4 Node.js + Express + Git – 登记邮箱</h3>
+              <p>
+                网页介绍：用户留下姓名和地址，提交后可自动添加进公司的通讯录，方便统一发送营销邮件。
+              </p>
+              <p>
+                在线地址：<a href="https://desolate-sierra-86985.herokuapp.com/"
+                  >Newsletter</a
+                >
+              </p>
+              <p>
+                总结：<br />1 掌握Node.js及其express框架，制作服务器； <br />
+                2 使用npm、API等。<br />
+                3 利用Git，将本地服务器上传至host网站。<br />
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="image\newsletter.gif"
+                class="img-fluid project-pic"
+                alt="Newsletter"
+              />
+            </div>
+          </div>
+        </div>
+        <hr class="noheight" />
+
+        <div id="TodoList" class="container-fluid todolist">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>2.5 Node.js+EJS+MongoDB - TodoList</h3>
+              <p>
+                网页介绍：完成清单。可以在URL后输入不同字符串，创建不同的List。
+              </p>
+              <p>
+                在线地址：<a
+                  href="https://fathomless-stream-81556.herokuapp.com/"
+                  >To Do List</a
+                >
+              </p>
+              <p>
+                总结：<br />1 使用同一个EJS文件创建多个格式相同的网页；<br />
+                2 创建MongoDB的本地数据库和在线数据库； <br />
+                3
+                使用Mongoose对MongoDB数据库进行操作，包括对内容进行上传、修改、删除等。
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="image\toDoList.gif"
+                class="img-fluid project-pic"
+                alt="ToDoList"
+              />
+            </div>
+          </div>
+        </div>
+        <hr class="noheight" />
+
+        <div id="ColorFlipper" class="container-fluid colorflipper">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>2.6 DOM – colorFlipper</h3>
+              <p>
+                网页介绍：点击按钮后随机生成背景颜色，并在页面标示HEX 颜色代码。
+              </p>
+              <p>
+                在线地址：<a
+                  href="https://21cloudocean.github.io/color-flipper/hex.html"
+                  >Color Flipper || Simple</a
+                >
+              </p>
+              <p>
+                总结：<br />1 1
+                使用getElement和querySelector进行element选择；<br />
+                2 添加eventlistener并进行相应操作。
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="image\colorFlipper.gif"
+                class="img-fluid project-pic"
+                alt="colorFlipper"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- <hr class="noheight"> -->
+      </section>
+
+      <section id="React" class="container-fluid seperatePart">
+        <h1>React</h1>
+        <div id="Keeper" class="container-fluid Keeper">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>3.1 React+Node.js+MongoDB – Keeper</h3>
+              <p>
+                网页介绍：便签。点击后输入框展开，实时添加和删除便签，便签可以长久保存。
+              </p>
+              <p>
+                具体代码：<a
+                  href="https://github.com/21cloudocean/KeeperApp-ReactWithBackend"
+                  >Keeper App</a
+                >
+              </p>
+              <p>
+                总结： <br />
+                1 使用React制作组件，并在不同组件间通过props传输数据和函数；
+                <br />2 使用Hook实现用户与UI的实时互动； <br />3 MERN
+                stack：将React与Node.js+express写成的server及MongoDB连接，实现前后端交互。
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="image\KeeperApp.gif"
+                class="img-fluid project-pic"
+                alt="KeeperApp"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
