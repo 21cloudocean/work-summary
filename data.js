@@ -1,0 +1,100 @@
+const projects = [
+  {
+    id: 0,
+    name: "HTML+CSS构建个人主页",
+    tech: "HTML&CSS",
+    image: "./image/personal-c.jpg",
+    link: "https://21cloudocean.github.io/Dora-s-personal-webpage/",
+    intro: "个人主页",
+    urlName: "Personal Webpage",
+    summary: "在HTML基础上熟悉CSS+DIV构建，盒模型布局，静态页面搭建",
+  },
+  {
+    id: 1,
+    name: "Bootstrap制作网页",
+    tech: "HTML&CSS",
+    image: "./image/Tindog-c.jpg",
+    link: "https://21cloudocean.github.io/TingDog/",
+    intro: "产品介绍页",
+    urlName: "TinDog",
+    summary: "在HTML基础上熟悉CSS+DIV构建，盒模型布局，静态页面搭建",
+  },
+  {
+    id: 2,
+    name: "DOM - 骰子游戏",
+    tech: "JavaScript",
+    image: "./image/dicee-challenge.gif",
+    link: "https://21cloudocean.github.io/Dicee-Challenge/",
+    intro: "筛子游戏，刷新会显示不同点数。",
+    urlName: "Dicee Challenge",
+    summary:
+      "1 掌握JavaScript基础语法：variable变量，array数列，function函数，使用if条件句、while/for loop；<br>2 掌握DOM。",
+  },
+  {
+    id: 3,
+    name: "进阶DOM - 击鼓页面",
+    tech: "JavaScript",
+    image: "./image/drum-kit.gif",
+    link: "https://21cloudocean.github.io/Drum-Kit/",
+    intro: "鼠标点击或按对应按键，不同乐器会发出对应声音",
+    urlName: "Drum Kit",
+    summary:
+      "1 综合JavaScript的基础语法及DOM；<br>2 掌握even listener及 switch method。",
+  },
+  {
+    id: 4,
+    name: " jQuery - Simon游戏",
+    tech: "JavaScript",
+    image: "./image/Simon.gif",
+    link: "https://21cloudocean.github.io/Simon-Game-Challenge/",
+    intro:
+      "该游戏每个level会提示一个按键，并将该按键加入用户需要点击的序列，即需要点击的按钮数量与level数相同，用户一旦点击错误，游戏则重新开始。",
+    urlName: "Simon",
+    summary: "在HTML基础上熟悉CSS+DIV构建，盒模型布局，静态页面搭建",
+  },
+  {
+    id: 5,
+    name: "Express+Git–登记邮箱",
+    tech: "Node",
+    image: "./image/newsletter.gif",
+    link: "https://desolate-sierra-86985.herokuapp.com/",
+    intro:
+      "用户留下姓名和地址，提交后可自动添加进邮箱通讯录，方便统一发送营销邮件。",
+    urlName: "Newsletter",
+    summary:
+      "1 掌握Node.js及其express框架，制作本地服务器；<br>2 使用npm、API等。<br>3 利用Git，将本地服务器上传至host网站。",
+  },
+  {
+    id: 6,
+    name: "EJS+MongoDB+Mongoose-TodoList",
+    tech: "Node",
+    image: "./image/toDoList.gif",
+    link: "https://fathomless-stream-81556.herokuapp.com/",
+    intro: "完成清单。可以在URL后输入不同字符串，创建不同的List。",
+    urlName: "To Do List",
+    summary:
+      "1 使用同一个EJS文件创建多个格式相同的网页；<br>2 创建MongoDB的本地数据库和在线数据库；<br>3 使用Mongoose对MongoDB数据库进行操作，包括对内容进行上传、修改、删除等。",
+  },
+  {
+    id: 7,
+    name: "DOM–colorFlipper",
+    tech: "JavaScript",
+    image: "./image/colorFlipper.gif",
+    link: "https://21cloudocean.github.io/color-flipper/hex.html",
+    intro: "点击按钮后随机生成背景颜色，并在页面标示HEX 颜色代码。",
+    urlName: "Color Flipper",
+    summary:
+      "1 使用getElement和querySelector进行element选择；<br>2 添加eventlistener并进行相应操作。",
+  },
+  {
+    id: 8,
+    name: "React+Node.js+MongoDB–Keeper",
+    tech: "React",
+    image: "./image/KeeperApp.gif",
+    link: "https://21cloudocean.github.io/Dora-s-personal-webpage/",
+    intro: "便签。点击后输入框展开，实时添加和删除便签，便签可以长久保存。",
+    urlName: "Keeper",
+    summary:
+      "1 使用React制作组件，并在不同组件间通过props传输数据和函数；<br>2 使用Hook实现用户与UI的实时互动；<br>3 MERN stack：将React与Node.js+express写成的server及MongoDB连接，实现前后端简单交互。",
+  },
+];
