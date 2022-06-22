@@ -50,7 +50,8 @@ const projects = [
     intro:
       "该游戏每个level会提示一个按键，并将该按键加入用户需要点击的序列，即需要点击的按钮数量与level数相同，用户一旦点击错误，游戏则重新开始。",
     urlName: "Simon",
-    summary: "在HTML基础上熟悉CSS+DIV构建，盒模型布局，静态页面搭建",
+    summary:
+      "1 熟悉并使用jQuery；<br>2 进一步掌握JavaScript中的function、if逻辑、数列操作。",
   },
   {
     id: 5,
@@ -96,5 +97,49 @@ const projects = [
     urlName: "Keeper",
     summary:
       "1 使用React制作组件，并在不同组件间通过props传输数据和函数；<br>2 使用Hook实现用户与UI的实时互动；<br>3 MERN stack：将React与Node.js+express写成的server及MongoDB连接，实现前后端简单交互。",
+  },
+  {
+    id: 9,
+    name: "CSS - Tea Station",
+    tech: "HTML&CSS",
+    image: "./image/tea-station-c.JPG",
+    link: "https://21cloudocean.github.io/tea-station-CSS/",
+    intro: "茶公司产品介绍页。",
+    urlName: "Tea Station",
+    summary:
+      "1 使用CSS variable，设置global styles；<br>2 使用float和clearfix设置多列布局，使用media queries进行响应式布局；<br>3 使用animation。",
+  },
+  {
+    id: 10,
+    name: "DOM – Countdown Timer",
+    tech: "JavaScript",
+    image: "./image/count-down-c.JPG",
+    link: "https://21cloudocean.github.io/CountdownTimer-Dom/",
+    intro: "倒计时页。",
+    urlName: "Countdown Timer",
+    summary:
+      "1 使用Date()及其他获取时间的method；<br>2 使用模运算符进行剩余时间计算，使用forEach将剩余时间分配在不同单位的倒计时上；<br>3 获取用户打开页面的时间，使倒计时永不过时。",
+  },
+  {
+    id: 11,
+    name: "DOM – Grocery Bud",
+    tech: "JavaScript",
+    image: "./image/grocery-bud.gif",
+    link: "https://21cloudocean.github.io/GroceryBud-DOM/",
+    intro: "清单，可进行增删改。",
+    urlName: "Grocery Bud",
+    summary:
+      "1 编辑：使用一个Boolean variable识别是否为编辑状态；<br>2 提示栏：使用setTimeout管理提示栏的持续时间，根据输入状态改变提示栏内容和样式；<br>3 清单增删改：使用creatElement和appendChild增加item，removeChild移除item，使用forEach清空清单；<br>4 使用date和toString生成id，使用local storage。",
+  },
+  {
+    id: 12,
+    name: "DOM – Menu",
+    tech: "JavaScript",
+    image: "./image/menu.gif",
+    link: "https://21cloudocean.github.io/Menu---DOM/",
+    intro: "菜品展示，可点击按钮进行筛选。",
+    urlName: "Menu",
+    summary:
+      "1 使用DOMContentLoaded事件，使页面自动加载菜品；<br>2 使用reduce生成菜品类别，使用map生成按钮，通过filter实现筛选功能。",
   },
 ];
