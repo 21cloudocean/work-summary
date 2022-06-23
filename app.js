@@ -51,8 +51,9 @@ function displayItems(arrayName) {
           <div class="img-container">
             <img class="card-img" src=${item.image} alt=${item.urlName} />
           </div>
+          <div class="content-container">
           <h4>${item.name}</h4>
-          <p><span class="strong">网页介绍：</span> ${item.intro}</p>
+          <p><span class="strong">网页介绍：</span>${item.intro}</p>
           <p>
             <span class="strong">在线地址：</span
             ><a
@@ -64,6 +65,7 @@ function displayItems(arrayName) {
             <span class="strong">技术总结：</span><br />
             ${item.summary}
           </p>
+          </div>
         </article>`;
   });
   return (newName = newName.join(""));

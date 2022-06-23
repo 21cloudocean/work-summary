@@ -138,15 +138,14 @@ h4 {
   color: var(--clr-primary);
 }
 .section-center {
-  padding: 4rem 0;
+  padding-bottom: 4rem;
   width: 85vw;
   margin: 0 auto;
-  max-width: 1170px;
 }
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
-    padding: 4rem 1rem;
+    padding: 0 1rem 1rem;
   }
 }
 /* 
@@ -298,6 +297,9 @@ Section
   margin-top: 2rem;
   text-shadow: 0.25rem 0.25rem 0.5rem rgba(25, 64, 53, 0.3);
 }
+.section-container {
+  padding: 2rem 0 3rem;
+}
 .javascript,
 .react {
   background: var(--clr-grey-10);
@@ -325,7 +327,7 @@ Card
   /* border-bottom: 0.25rem solid var(--clr-primary-light); */
 }
 .card-img {
-  height: 17rem;
+  height: 13rem;
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
 }
@@ -336,6 +338,9 @@ Card
   color: var(--clr-primary);
   text-align: center;
 }
+.content-container {
+  padding-left: 5px;
+}
 @media screen and (min-width: 768px) {
   .single-card {
     float: left;
@@ -343,14 +348,37 @@ Card
     width: 45%;
     margin-right: 5%;
   }
+  .content-container {
+    height: 12.5rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1100px) {
+  .section-center {
+    width: 90vw;
+  }
   .single-card {
     /* float: left; */
     /* 使用margin */
     width: 30%;
     margin-right: 3.333%;
+    /* width: 22.5%;
+    margin-right: 2.5%; */
   }
+}
+/* 滚动条 */
+.content-container::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.content-container::-webkit-scrollbar-track {
+  background-color: var(--clr-green-5);
+  border-radius: var(--radius);
+}
+.content-container::-webkit-scrollbar-thumb {
+  background: var(--clr-white);
+  border-radius: var(--radius);
 }
 
 /* 
