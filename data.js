@@ -17,7 +17,8 @@ const projects = [
     link: "https://21cloudocean.github.io/TingDog/",
     intro: "产品介绍页",
     urlName: "TinDog",
-    summary: "在HTML基础上熟悉CSS+DIV构建，盒模型布局，静态页面搭建",
+    summary:
+      "1 熟悉并使用Bootstrap的网格系统，页面根据屏幕大小自动调整布局；<br>2 使用Bootstrap各种组件进行页面搭建，包括导航栏、按钮样式、轮播图等。",
   },
   {
     id: 2,
@@ -100,7 +101,7 @@ const projects = [
   },
   {
     id: 9,
-    name: "CSS - Tea Station",
+    name: "CSS- float - Tea Station",
     tech: "HTML&CSS",
     image: "./image/tea-station-c.JPG",
     link: "https://21cloudocean.github.io/tea-station-CSS/",
@@ -141,5 +142,15 @@ const projects = [
     urlName: "Menu",
     summary:
       "1 使用DOMContentLoaded事件，使页面自动加载菜品；<br>2 使用reduce生成菜品类别，使用map生成按钮，通过filter实现筛选功能。",
+  },
+  {
+    id: 13,
+    name: "flexbox – Backroads tour company",
+    tech: "HTML&CSS",
+    image: "./image/backroads-c.JPG",
+    link: "https://21cloudocean.github.io/Backroads-Tour-Company-CSS-flexbox/",
+    intro: "旅游公司介绍页。",
+    urlName: "Backroads",
+    summary: "1 使用position:flex设置网页布局；<br>2 响应式导航栏功能设置。",
   },
 ];
