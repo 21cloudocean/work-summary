@@ -151,6 +151,18 @@ const projects = [
     link: "https://21cloudocean.github.io/Backroads-Tour-Company-CSS-flexbox/",
     intro: "旅游公司介绍页。",
     urlName: "Backroads",
-    summary: "1 使用position:flex设置网页布局；<br>2 响应式导航栏功能设置。",
+    summary:
+      "1 使用position:flex设置网页布局；<br>2 响应式导航栏功能设置，使用height: auto调整大屏navbar的显示。",
+  },
+  {
+    id: 14,
+    name: "Grid – Grid Mini Project",
+    tech: "HTML&CSS",
+    image: "./image/grid-mini-c.JPG",
+    link: "https://21cloudocean.github.io/Grid-Mini-Project/",
+    intro: "grid布局。",
+    urlName: "Grid Mini Project",
+    summary:
+      "1 让主页的navbar随屏幕大小变化；<br>2 card页卡片内部icon水平排列；卡片排布随屏幕大小变化；<br>3 tiles页图片响应式布局，大屏时使用grid-template-areas排布；<br>4 layout页通过给grid-line命名，实现大屏的特殊布局。",
   },
 ];
