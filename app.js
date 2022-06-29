@@ -6,6 +6,7 @@ const date = (document.getElementById("date").innerHTML =
 const navBtn = document.getElementById("nav-btn");
 const navbar = document.getElementById("navbar");
 const navClose = document.getElementById("nav-close");
+const navList = document.getElementById("nav-list");
 // show nav
 navBtn.addEventListener("click", () => {
   navbar.classList.add("showNav");
@@ -14,6 +15,11 @@ navBtn.addEventListener("click", () => {
 navClose.addEventListener("click", () => {
   navbar.classList.remove("showNav");
 });
+// close nav after clicking links
+navList.addEventListener("click", () => {
+  navbar.classList.remove("showNav");
+});
+
 // =============== 自动生成card ===============
 const htmlContainer = document.getElementById("htmlContainer");
 const javascriptContainer = document.getElementById("javascriptContainer");
