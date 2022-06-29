@@ -165,4 +165,15 @@ const projects = [
     summary:
       "1 让主页的navbar随屏幕大小变化；<br>2 card页卡片内部icon水平排列；卡片排布随屏幕大小变化；<br>3 tiles页图片响应式布局，大屏时使用grid-template-areas排布；<br>4 layout页通过给grid-line命名，实现大屏的特殊布局。",
   },
+  {
+    id: 15,
+    name: "Grid – Protfolio",
+    tech: "HTML&CSS",
+    image: "./image/JohnDoe-c.JPG",
+    link: "https://21cloudocean.github.io/portfolio-grid/",
+    intro: "网络开发者个人主页。",
+    urlName: "Portfolio",
+    summary:
+      "1 使用grid制作响应式navbar和sidebar；<br>2 使用grid对图片进行特殊排布，hover时图片显示文字和背景颜色；<br>3 使用video作为背景，并使用clip-path规定轮廓形状；<br>4 使用grid在网页制作进度条和时间线；<br>5 使用backface-visibility和perspective制作有正反面、可旋转的卡片；<br>6 使用::before和::after，为图片增加底框装饰和overlay。",
+  },
 ];
