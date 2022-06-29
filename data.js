@@ -167,7 +167,7 @@ const projects = [
   },
   {
     id: 15,
-    name: "Grid – Protfolio",
+    name: "Grid – Portfolio",
     tech: "HTML&CSS",
     image: "./image/JohnDoe-c.JPG",
     link: "https://21cloudocean.github.io/portfolio-grid/",
