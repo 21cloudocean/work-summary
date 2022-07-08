@@ -176,4 +176,15 @@ const projects = [
     summary:
       "1 使用grid制作响应式navbar和sidebar；<br>2 使用grid对图片进行特殊排布，hover时图片显示文字和背景颜色；<br>3 使用video作为背景，并使用clip-path规定轮廓形状；<br>4 使用grid在网页制作进度条和时间线；<br>5 使用backface-visibility和perspective制作有正反面、可旋转的卡片；<br>6 使用::before和::after，为图片增加底框装饰和overlay。",
   },
+  {
+    id: 16,
+    name: "Dark Mode",
+    tech: "JavaScript",
+    image: "./image/dark-mode.gif",
+    link: "https://21cloudocean.github.io/dark-mode-CSS-JS/",
+    intro: "点击按钮，页面进入夜间模式。",
+    urlName: "Dark Mode",
+    summary:
+      "1 使用CSS variable进行夜间模式设置并通过JS实现切换；<br>2 使用map，根据data自动生成文章；<br>3 使用Moment.js对每篇文章的日期格式进行规范。",
+  },
 ];
