@@ -187,4 +187,15 @@ const projects = [
     summary:
       "1 使用CSS variable进行夜间模式设置并通过JS实现切换；<br>2 使用map，根据data自动生成文章；<br>3 使用Moment.js对每篇文章的日期格式进行规范。",
   },
+  {
+    id: 17,
+    name: "Filters",
+    tech: "JavaScript",
+    image: "./image/filters.gif",
+    link: "https://21cloudocean.github.io/filters-JS/",
+    intro: "用户可输入文字对商品进行检索，或通过点击按钮对商品进行分类检索。",
+    urlName: "Filters",
+    summary:
+      "1 使用spread operator对原数列进行复制；<br>2 使用keyup event实现文字检索；<br>3 使用set对分类进行保存，从而生成类别按钮。",
+  },
 ];
