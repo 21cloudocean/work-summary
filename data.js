@@ -198,4 +198,16 @@ const projects = [
     summary:
       "1 使用spread operator对原数列进行复制；<br>2 使用keyup event实现文字检索；<br>3 使用set对分类进行保存，从而生成类别按钮。",
   },
+  {
+    id: 18,
+    name: "AJAX - Products",
+    tech: "JavaScript",
+    image: "./image/products.gif",
+    link: "https://21cloudocean.github.io/products-AJAX/index.html",
+    intro:
+      "使用API获得商品信息在主页生成商品列表，用户点击主页商品，可打开对应商品详情页。",
+    urlName: "Products",
+    summary:
+      "1 使用fetch()和async/await从API获取信息，加载中、加载成功、加载失败显示不同的效果；<br>2 将API中获取的商品ID用作query string parameter；<br>3 使用window.location.search和URLSearchParams获取query param，并使用get获取指定的parameter，从而实现在同一个HTML中显示不同商品内容的效果。",
+  },
 ];
