@@ -210,4 +210,16 @@ const projects = [
     summary:
       "1 使用fetch()和async/await从API获取信息，加载中、加载成功、加载失败显示不同的效果；<br>2 将API中获取的商品ID用作query string parameter；<br>3 使用window.location.search和URLSearchParams获取query param，并使用get获取指定的parameter，从而实现在同一个HTML中显示不同商品内容的效果。",
   },
+  {
+    id: 19,
+    name: "comfy store",
+    tech: "JavaScript",
+    image: "./image/comfy-store-c.JPG",
+    link: "https://21cloudocean.github.io/comfy-store-JS/",
+    intro:
+      "由多个页面构成的电商网站。每个页面都可以调取购物车。点击商品详情按钮可进入商品详情页，点击购物车按钮可加购并更改购物车角标，在购物车中可查看商品总金额、删除商品、调整商品数量。购物车数据刷新和切换页面不会消失。",
+    urlName: "Comfy Store",
+    summary:
+      "1 使用fetch()和async/await从API获取信息后存入local storage，其余页面通过local storage获取商品信息；<br>2 使用data-id生成详情页、实现购物车对应商品的增删效果；<br>3使用local storage实现购物车数据跨页面不消失。",
+  },
 ];
