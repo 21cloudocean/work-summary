@@ -212,6 +212,17 @@ const projects = [
   },
   {
     id: 19,
+    name: "Pagination",
+    tech: "JavaScript",
+    image: "./image/pagination.JPG",
+    link: "https://21cloudocean.github.io/pagination-JS/",
+    intro: "查看关注用户，分页显示。",
+    urlName: "Pagination",
+    summary:
+      "1 使用fetch()和async/await从API获取信息后在HTML显示；<br>2 使用Array.from对用户进行切分，从而让每页只显示特定数量的用户；<br>3 使用.map()获取Array.from生成的array数量并显示为页码按钮；<br>4 使用ternary operator让当前页码显示不同效果，并通过e.target和data-index实现点击页码后跳转。",
+  },
+  {
+    id: 20,
     name: "comfy store",
     tech: "JavaScript",
     image: "./image/comfy-store-c.JPG",
