@@ -301,7 +301,7 @@ Section
   padding: 2rem 0 3rem;
 }
 .javascript,
-.react {
+.vue {
   background: var(--clr-grey-10);
 }
 /* .html,
