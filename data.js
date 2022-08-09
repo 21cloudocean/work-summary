@@ -243,5 +243,27 @@ const projects = [
     urlName: 'vue cart',
     summary:
       '1 使用vite创建vue项目，创建并封装Header、Footer、Goods、Counter四个组件，使用bootstrap布置页面布局；<br>2 全局配置axios并通过created生命周期函数、async/await等获取商品数据；<br>3 通过自定义属性和自定义事件实现组件之间传值；<br>4 使用v-for渲染每件商品，并封装自定义属性id实现每件商品的选中效果；<br>5 使用watch侦听器监听输入框中数量的变化并将最新数据传递给商品组件。'
+  },
+  {
+    id: 22,
+    name: 'vue - table',
+    tech: 'Vue',
+    image: './image/vue-table.gif',
+    link: 'https://github.com/21cloudocean/demo-table-vue3',
+    intro: '商品管理表格，可为每个商品增加标签，以及删除商品。',
+    urlName: 'vue table',
+    summary:
+      '1 vite创建项目，bootstrap布置页面布局，axios获取数据，props传值；<br>2 使用命名插槽显示表头，使用作用域插槽和v-for渲染表格内容；<br>3 v-for渲染商品tag，v-if和v-else实现输入框和按钮按需展示；<br>4 通过自定义指令使input自动获取焦点，blur事件提交input信息并展示；<br>5 绑定keyup，enter提交信息，esc清空输入框。'
+  },
+  {
+    id: 23,
+    name: 'Element UI - Users',
+    tech: 'Vue',
+    image: './image/vue-users.gif',
+    link: 'https://github.com/21cloudocean/demo-users-vue2-elementUI',
+    intro: '用户列表，可查看用户详情、添加、删除用户。',
+    urlName: 'vue users',
+    summary:
+      '1 vue-cli创建项目，使用vue-router配置路由规则，并使用动态路由查看用户详情和删除用户；<br>2 通过axios获取和添加用户，通过proxy解决跨域问题；<br>3 通过axios拦截器实现Loading效果的添加和删除；<br>4 使用Element-ui组件库渲染页面的表格、按钮、表单和对话框；<br>5 通过Element-ui组件库中的Message和MessageBox对用户操作进行提示。'
   }
 ]
