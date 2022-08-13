@@ -3,7 +3,7 @@
 Fonts
 ============
 */
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Poppins:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Poppins:wght@300;400;700&display=swap');
 
 /* 
 ============
@@ -23,8 +23,8 @@ Variables
   --clr-grey-5: #617d98;
   --clr-grey-10: #f1f5f8;
   --clr-white: #fff;
-  --ff-primary: "Poppins", "华文雅黑", sans-serif;
-  --ff-secondary: "Dancing Script", "华文行楷", cursive;
+  --ff-primary: 'Poppins', '华文雅黑', sans-serif;
+  --ff-secondary: 'Dancing Script', '华文行楷', cursive;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -123,7 +123,7 @@ h4 {
 }
 .clearfix::after,
 .clearfix::before {
-  content: "";
+  content: '';
   clear: both;
   display: table;
 }
@@ -249,7 +249,7 @@ Header
 */
 .header {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("./banner.jpg");
+    url('./banner.jpg');
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
@@ -337,10 +337,9 @@ Card
 .single-card h4 {
   color: var(--clr-primary);
   text-align: center;
-  margin-top: 15px;
 }
 .content-container {
-  padding-left: 5px;
+  padding: 20px 20px 0;
 }
 @media screen and (min-width: 768px) {
   .single-card {
