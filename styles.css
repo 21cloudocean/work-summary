@@ -337,6 +337,7 @@ Card
 .single-card h4 {
   color: var(--clr-primary);
   text-align: center;
+  margin-top: 15px;
 }
 .content-container {
   padding-left: 5px;
