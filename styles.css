@@ -339,7 +339,7 @@ Card
   text-align: center;
 }
 .content-container {
-  padding: 20px 20px 0;
+  padding: 20px;
 }
 @media screen and (min-width: 768px) {
   .single-card {
