@@ -265,5 +265,17 @@ const projects = [
     urlName: 'vue users',
     summary:
       '1 vue-cli创建项目，使用vue-router配置路由规则，并使用动态路由查看用户详情和删除用户；<br>2 通过axios获取和添加用户，通过proxy解决跨域问题；<br>3 通过axios拦截器实现Loading效果的添加和删除；<br>4 使用Element-ui组件库渲染页面的表格、按钮、表单和对话框；<br>5 通过Element-ui组件库中的Message和MessageBox对用户操作进行提示。'
+  },
+  {
+    id: 24,
+    name: '微博轻享版页面样式练习',
+    tech: 'HTML&CSS',
+    image: './image/wbproject.gif',
+    link: 'https://21cloudocean.github.io/wbProjectTrying/',
+    intro:
+      '微博轻享版学习，制作固定footer和navbar和不同页面布局：<br>首页：关注列表下拉菜单/推荐页/点击头像进入个人主页；<br>发现页：趋势（热搜榜/视频播放页/点击视频页全文按钮进入微博详情页/详情页下附评论区），超话，热门；<br>消息页：@我的（@我的微博/@我的评论），评论（收到的评论/发出的评论/关注人的），赞，私信；<br>我的页。',
+    urlName: 'wbProjectTrying',
+    summary:
+      '1 使用flex和grid布局构建页面布局；<br>2 上滑固定项目使用position: sitcky实现；<br>3 头像标识使用position: relative和absolute处理；<br>Javascript：通过getBoundingClientRect()实现个人详情页滑动头像透明度改变；<br> Javascript：通过setInterval、click事件和video.play()、video.pause()等实现播放按钮控制视频播放状态、播放时进度条移动、点击进度条跳转播放进度；<br>6 Javascript：通过classList.toggle()实现element的显示和消失。'
   }
 ]
